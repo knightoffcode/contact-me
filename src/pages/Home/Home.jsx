@@ -1,5 +1,6 @@
-import React from 'react'
-import Highlight from '../../components/Highlight/Highlight'
+import React from 'react';
+import Contact from '../../components/Contact';
+import ContactInfo from '../../components/ContactInfo';
 
 /**
  *
@@ -8,10 +9,13 @@ import Highlight from '../../components/Highlight/Highlight'
 
 function Home() {
     return (
-        <div className='home-page'>
-            <Highlight />
+        <div className='home'>
+            <main className="home__main">
+                <ContactInfo />
+                <Contact />
+            </main>
         </div>
-    )
-}
+    );
+};
 
-export default Home
+export default Home;
