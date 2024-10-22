@@ -1,53 +1,66 @@
 .contact {
     padding: 20px;
     margin: 0 auto;
-    width: 50%;
+    width: 40%;
 
     &__title {
-        font-size: 24px;
-        margin-bottom: 20px;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
     }
 
     &__form {
         display: flex;
         flex-direction: column;
-        padding: 2rem;
-        box-shadow: 0px 0px 20px red;
+        text-align: center;
+        padding: 3rem;
+        box-shadow: 0px 0px 15px rgb(40, 40, 40);
     }
 
     &__field {
         margin-bottom: 15px;
+        display: flex;
     }
 
     &__label {
         font-size: 16px;
         margin-bottom: 5px;
+        position: relative;
+        padding-top: 1rem;
     }
 
     &__input,
     &__textarea {
         width: 100%;
-        padding: .8rem 0;
-        font-size: 14px;
-        border: 1px solid #ccc;
+        padding: .8rem;
+        border: none;
+        background-color: unset;
+        font-family: inherit;
+        color: inherit;
         border-radius: 5px;
-    }
+        margin-left: 1rem;
 
-    &__textarea {
-        min-height: 100px;
+        &:active,
+        &:hover,
+        &:focus {
+            border: none;
+        }
     }
 
     &__button {
-        background-color: #007BFF;
-        color: white;
+        background-color: #ececec;
+        color: black;
         padding: 10px;
+        width: 80%;
+        margin: auto;
+        font-family: inherit;
         border: none;
+        font-weight: 700;
         border-radius: 5px;
         cursor: pointer;
     }
 
     &__button:hover {
-        background-color: #0056b3;
+        background-color: #666666;
     }
 
     &__error {
@@ -56,11 +69,48 @@
     }
 
     &__success {
-        color: green;
-        font-size: 16px;
+        color: inherit;
+        z-index: 12;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        background: #3d3d3d;
+        box-shadow: 0px 0px 15px rgb(40, 40, 40);
+        border-left: 8px solid green;
+        padding: 2rem;
+        animation: slide-in 0.5s forwards;
+
+        &.fade-out {
+            animation: slide-out 0.5s forwards;
+        }
     }
 
     &__required {
         color: red;
+        position: absolute;
+    }
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-out {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(100%);
+        opacity: 0;
     }
 }

@@ -11,33 +11,19 @@ function ContactInfo() {
             <h3 className="contactInfo__title">Informações de Contato</h3>
             <div className="contactInfo__section">
                 <p className="contactInfo__text">
-                    <strong>Endereço:</strong> Rua Exemplo, 123, Centro, Cidade, Estado
+                    Preencha o formulário abaixo com suas dúvidas, sugestões ou solicitações. Nossa equipe analisará sua mensagem e retornará o mais breve possível. Por favor, certifique-se de inserir um e-mail válido para que possamos responder adequadamente.
                 </p>
                 <p className="contactInfo__text">
-                    <strong>Telefone:</strong> (11) 1234-5678
-                </p>
-                <p className="contactInfo__text">
-                    <strong>Email:</strong> exemplo@email.com
+                    <strong>Observação:</strong> Respondemos em até 48 horas úteis. Seus dados serão tratados com sigilo e não serão compartilhados com terceiros.
                 </p>
             </div>
-
-            <h3 className="contactInfo__subtitle">Horários de Recebimento</h3>
+            <h3 className="contactInfo__subtitle">Horário de retorno</h3>
             <div className="contactInfo__section">
                 <p className="contactInfo__text">
-                    <strong>Segunda a Sexta:</strong> 9:00 - 18:00
-                </p>
-                <p className="contactInfo__text">
-                    <strong>Sábados:</strong> 9:00 - 12:00
-                </p>
-                <p className="contactInfo__text">
-                    <strong>Domingos e Feriados:</strong> Fechado
+                    <strong>Segunda a Sexta:</strong> 9:00 - 12:00
                 </p>
             </div>
-
             <h3 className="contactInfo__subtitle">...</h3>
-            <div className="contactInfo__section">
-                <p className="contactInfo__text"></p>
-            </div>
         </div>
     );
 };

@@ -2,6 +2,7 @@
     width: 100%;
     z-index: 3;
     padding: 0 0 0.1rem;
+    height: 10%;
 
     &__wrapper {
         max-width: 1200px;
@@ -10,7 +11,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1rem 0 0.5rem;
+        padding: 1rem 1rem 0.5rem;
     }
 
     &__menumobile {
@@ -43,26 +44,15 @@
 
     &__link {
         text-decoration: none;
-        color: $font-black;
+        color: inherit;
         font-size: $default-font-size;
         font-weight: 600;
-
-        // &__icon {
-        //   margin: 0 0.5rem -3px 0;
-
-        //   &--user {
-        //     font-size: 1.3rem;
-        //     margin: 0 0 -3px 0;
-        //   }
-        // }
 
         &--top {
             padding: 0;
             color: #5f5e5e;
             font-size: 0.8rem;
         }
-
-        // &--all {}
 
         &--phone {
             font-size: 1.2rem;
@@ -93,8 +83,6 @@
     }
 
     &__menu {
-        max-width: 1200px;
-        margin: 0 auto;
         display: flex;
         justify-content: space-between;
         flex-grow: 0.8;

@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { GrUpdate, GrMenu } from 'react-icons/gr';
-
 /**
  *
  * @returns
@@ -12,7 +10,7 @@ function Header() {
     const menuPages = [
         {
             id: '01',
-            page: 'Home',
+            page: 'Contact',
             url: '/',
             subPages: [
                 {
@@ -22,23 +20,14 @@ function Header() {
                 }
             ]
         },
-        {
-            id: '02',
-            page: 'Home',
-            url: '/',
-            subPages: [
-                {
-                    id: '021',
-                    name: 'Page 01',
-                    url: '/021'
-                }
-            ]
-        }
     ];
 
     return (
         <header className='header'>
             <div className='header__wrapper'>
+                    <div className="header__logo">
+                        NOC
+                    </div>
                     <nav className='header__menu'>
                         <ul className='header__menu__list'>
                             <div className='header__menu__item'>
@@ -61,22 +50,6 @@ function Header() {
                                             {page.page}
                                         </a>
                                     </li>
-                                    {page.subPages
-                                        ? page.subPages.map((subpage, subIndex) => (
-                                            <div className='header__submenu' key={subIndex}>
-                                                <ul className='header__submenu__list'>
-                                                    <li className='header__submenu__item'>
-                                                        <a
-                                                            className='header__submenu__anchor'
-                                                            href={subpage.url}
-                                                        >
-                                                            {subpage.name}
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        ))
-                                        : null}
                                 </div>
                             ))}
                         </ul>
