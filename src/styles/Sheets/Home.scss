@@ -3,5 +3,18 @@
     &__main {
         display: flex;
         padding: 1rem 2rem;
+        
+        @media (max-width: 576px) {
+            flex-wrap: wrap;
+            padding: 1rem;
+        }
+
+        @media (max-width: 767px) {}
+
+        @media (max-width: 991px) {}
+
+        @media (max-width: 1199px) {}
+
+        @media (max-width: 1399px) {}
     }
 }
