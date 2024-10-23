@@ -1,10 +1,8 @@
 #root {
     background-color: rgb(55, 53, 61);
-    background: linear-gradient(to top right, #333 20%, #444 100%); /* Degradê sutil */
-
+    background: linear-gradient(to top right, #333 20%, #444 100%);
     font-family: "Playwrite GB S", cursive;
     color: #c0bdbd;
-
     display: flex;
     flex-direction: column;
     height: 100vh;

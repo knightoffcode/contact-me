@@ -1,9 +1,10 @@
 .home {
     height: 80%;
+
     &__main {
         display: flex;
         padding: 1rem 2rem;
-        
+
         @media (max-width: 576px) {
             flex-wrap: wrap;
             padding: 1rem;
