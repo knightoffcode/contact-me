@@ -1,2 +1,2 @@
-import ContactInfo from './ContactInfo'
-export default ContactInfo
+import ContactInfo from './ContactInfo';
+export default ContactInfo;

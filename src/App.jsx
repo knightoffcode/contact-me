@@ -1,10 +1,8 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-
-import Header from './components/Header/Header'
-import Footer from './components/Footer/Footer'
-
-import './styles/Main.scss'
-import Home from './pages/Home/Home'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Home from './pages/Home/Home';
+import './styles/Main.scss';
 
 /**
  *
@@ -16,7 +14,7 @@ const router = createBrowserRouter([
         path: '/',
         element: <Home />
     },
-])
+]);
 
 /**
  *
@@ -24,14 +22,13 @@ const router = createBrowserRouter([
  */
 
 function App() {
-
     return (
         <>
             <Header />
             <RouterProvider router={router} />
             <Footer />
         </>
-    )
-}
+    );
+};
 
-export default App
+export default App;

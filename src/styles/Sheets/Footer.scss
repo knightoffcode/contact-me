@@ -1,5 +1,9 @@
 .footer {
     height: 5%;
+    position: absolute;
+    bottom: 38px;
+    left: 0;
+    width: 50%;
 
     &__wrapper {
         max-width: 1200px;
@@ -17,4 +21,19 @@
             text-align: center;
         }
     }
+
+    @media (max-width: 576px) {
+        width: 100%;
+        height: auto;
+        position: relative;
+        bottom: 0;
+    }
+
+    @media (max-width: 767px) {}
+
+    @media (max-width: 991px) {}
+
+    @media (max-width: 1199px) {}
+
+    @media (max-width: 1399px) {}
 }
